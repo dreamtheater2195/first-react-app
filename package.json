@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "flow-bin": "^0.49.1",
     "husky": "^0.14.2",
     "lint-staged": "^4.0.0",
     "prettier": "^1.5.2",
@@ -11,12 +12,10 @@
     "react-scripts": "1.0.10"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
+    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
   },
   "scripts": {
+    "flow": "flow",
     "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
